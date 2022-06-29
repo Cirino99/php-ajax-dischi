@@ -1,0 +1,42 @@
+header {
+    background-color: #2e3a46;
+    padding: 10px;
+}
+
+header img {
+    width: 45px;
+}
+
+main {
+    background-color: #1e2d3b;
+}
+
+section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.card-song {
+    width: calc((100% /5) - 40px);
+    background-color: #2e3a46;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card-song img {
+    width: 100%;
+}
+
+.card-song h3 {
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.card-song span {
+    color: #897f78;
+    font-size: 18px;
+    font-weight: 500;
+}

@@ -19,7 +19,7 @@
             <section>
                 <div class="d-flex flex-wrap">
                     <div v-for="(song, id) in songsList" class="card-song text-center">
-                        <img :src="song.poster" alt="">
+                        <img :src="song.poster" :alt="song.title">
                         <h3>{{song.title}}</h3>
                         <span>{{ song.author }} <br> {{ song.year }}</span>
                     </div>
