@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . '/db/db.php';
+include_once __DIR__ . '/../db/db.php';
 
 $arr_dischi_rock = [];
 foreach ($arr_dischi as $disco) {

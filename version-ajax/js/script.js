@@ -2,7 +2,9 @@ const myApp = new Vue({
     el: '#app',
     data: {
         apiUrlAll: 'http://localhost/php-ajax-dischi/version-ajax/api.php',
-        apiUrlRock: 'http://localhost/php-ajax-dischi/version-ajax/filter-songs-api.php',
+        apiUrlRock: 'http://localhost/php-ajax-dischi/version-ajax/filter-api/songs-rock.php',
+        apiUrlPop: 'http://localhost/php-ajax-dischi/version-ajax/filter-api/songs-pop.php',
+        apiUrlJazz: 'http://localhost/php-ajax-dischi/version-ajax/filter-api/songs-jazz.php',
         songsList: [],
         genere: 'All'
     },
@@ -25,6 +27,12 @@ const myApp = new Vue({
                     break;
                 case 'Rock':
                     this.getSongsData(this.apiUrlRock);
+                    break;
+                case 'Pop':
+                    this.getSongsData(this.apiUrlPop);
+                    break;
+                case 'Jazz':
+                    this.getSongsData(this.apiUrlJazz);
                     break;
             }
         }
