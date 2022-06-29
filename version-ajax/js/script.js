@@ -31,6 +31,9 @@ const myApp = new Vue({
                 case 'Jazz':
                     this.getSongsData(this.apiUrl + '?genere=' + this.genere);
                     break;
+                case 'Metal':
+                    this.getSongsData(this.apiUrl + '?genere=' + this.genere);
+                    break;
             }
         }
     }
