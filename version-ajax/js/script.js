@@ -18,23 +18,7 @@ const myApp = new Vue({
             });
         },
         searchGenereSongs() {
-            switch (this.genere) {
-                case 'All':
-                    this.getSongsData(this.apiUrl + '?genere=' + this.genere);
-                    break;
-                case 'Rock':
-                    this.getSongsData(this.apiUrl + '?genere=' + this.genere);
-                    break;
-                case 'Pop':
-                    this.getSongsData(this.apiUrl + '?genere=' + this.genere);
-                    break;
-                case 'Jazz':
-                    this.getSongsData(this.apiUrl + '?genere=' + this.genere);
-                    break;
-                case 'Metal':
-                    this.getSongsData(this.apiUrl + '?genere=' + this.genere);
-                    break;
-            }
+            this.getSongsData(this.apiUrl + '?genere=' + this.genere);
         }
     }
 });
